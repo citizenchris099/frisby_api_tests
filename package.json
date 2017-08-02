@@ -1,0 +1,42 @@
+{
+  "name": "fly-api-tests",
+  "version": "0.0.1",
+  "description": "test suite for the spectrum apis",
+  "author": "Flywheel Business Intelligence, Inc.",
+  "license": "",
+  "devDependencies": {
+    "frisby": "^0.8.5",
+    "moment": "^2.18.1",
+    "jasmine-node": "*"
+  },
+  "scripts": {
+    "setup":"npm install jasmine-node -g",
+    "test_vanillaRounds": "jasmine-node --config url http://localhost:3000 tests/vanillaRounds_spec.js",
+    "test_decJanRounds": "jasmine-node --config url http://localhost:3000 tests/decJanRounds_spec.js",
+    "test_leapYearRounds": "jasmine-node --config url http://localhost:3000 tests/leapYearRounds_spec.js",
+    "test_fallTimeChangeRounds": "jasmine-node --config url http://localhost:3000 tests/fallTimeChangeRounds_spec.js",
+    "test_roundUpdates": "jasmine-node --config url http://localhost:3000 tests/roundUpdates_spec.js",
+    "test_roundUpdates2": "jasmine-node --config url http://localhost:3000 tests/roundUpdates2_spec.js",
+    "test_vanillaPM": "jasmine-node --config url http://localhost:3000 tests/vanillaPM_spec.js",
+    "test_decJanPM": "jasmine-node --config url http://localhost:3000 tests/decJanPM_spec.js",
+    "test_leapYearPM": "jasmine-node --config url http://localhost:3000 tests/leapYearPM_spec.js",
+    "test_daylightSavingsTimePM": "jasmine-node --config url http://localhost:3000 tests/daylightSavingTimePM_spec.js",
+    "test_pmUpdate": "jasmine-node --config url http://localhost:3000 tests/pmUpdate_spec.js",
+    "test_multiAssetPM": "jasmine-node --config url http://localhost:3000 tests/multiAssetPM_spec.js",
+    "test_pmWmUpdate": "jasmine-node --config url http://localhost:3000 tests/pmWmUpdate_spec.js",
+
+    "test_vanillaRounds_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/vanillaRounds_spec.js",
+    "test_decJanRounds_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/decJanRounds_spec.js",
+    "test_leapYearRounds_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/leapYearRounds_spec.js",
+    "test_fallTimeChangeRounds_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/fallTimeChangeRounds_spec.js",
+    "test_springTimeChangeRounds_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/springTimeChangeRounds_spec.js",
+    "test_roundUpdates_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/roundUpdates_spec.js",
+    "test_roundUpdates2_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/roundUpdates2_spec.js",
+    "test_pmUpdate_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/pm_spec.js",
+    "test_decJanPM_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/pm_spec.js",
+    "test_leapYearPM_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/pm_spec.js",
+    "test_daylightSavingstimePM_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/pm_spec.js",
+    "test_vanillaPM_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/vanillaPM_spec.js",
+    "test_debug": "jasmine-node --config url http://localhost:3000 --config debug yes tests/*_spec.js"
+  }
+}
